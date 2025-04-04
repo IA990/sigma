@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - AffiliPro</title>
+    <meta name="description" content="Découvrez qui nous sommes et notre mission de vous aider à trouver les meilleurs produits avec des recommandations expertes.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">AffiliPro</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="index.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                        <a href="about.html" class="text-blue-600 px-3 py-2 rounded-md text-sm font-medium">À propos</a>
+                        <a href="blog.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-600 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-16">
+        <div class="absolute inset-0 h-96 bg-blue-600"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-white mb-4">Notre Histoire</h1>
+                <p class="text-xl text-white">Découvrez qui nous sommes et notre engagement envers vous</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="relative -mt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <!-- Mission Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Notre Mission</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Chez AffiliPro, notre mission est simple : vous aider à faire les meilleurs choix d'achat. Dans un monde où les options sont infinies, nous nous engageons à tester, analyser et recommander uniquement les produits qui répondent à nos critères stricts de qualité et de valeur.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="bg-blue-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-search text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Recherche Approfondie</h3>
+                            <p class="text-gray-600">Nous testons chaque produit de manière approfondie avant de le recommander.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-hand-holding-heart text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Recommandations Honnêtes</h3>
+                            <p class="text-gray-600">Nous ne recommandons que les produits en lesquels nous croyons vraiment.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-users text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Communauté Engagée</h3>
+                            <p class="text-gray-600">Nous construisons une communauté d'acheteurs avisés.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Notre Équipe</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sophie Martin" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Sophie Martin</h3>
+                            <p class="text-gray-600">Fondatrice & Directrice</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Thomas Dubois" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Thomas Dubois</h3>
+                            <p class="text-gray-600">Expert Produits</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Marie Laurent" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Marie Laurent</h3>
+                            <p class="text-gray-600">Responsable Contenu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Ce Que Disent Nos Lecteurs</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Julie" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h4 class="font-semibold">Julie D.</h4>
+                                    <div class="text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic">"Grâce aux recommandations d'AffiliPro, j'ai trouvé exactement ce que je cherchais. Leurs tests sont vraiment complets et honnêtes."</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Marc" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h4 class="font-semibold">Marc P.</h4>
+                                    <div class="text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic">"Je consulte toujours AffiliPro avant un achat important. Leurs conseils m'ont fait économiser beaucoup de temps et d'argent."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AffiliPro</h3>
+                    <p class="text-gray-400">Votre guide de confiance pour les meilleurs produits et services.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">À propos</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Légal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mentions légales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">CGU</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 AffiliPro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - AffiliPro</title>
+    <meta name="description" content="Découvrez nos articles, guides d'achat et conseils pour choisir les meilleurs produits.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">AffiliPro</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="index.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                        <a href="about.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">À propos</a>
+                        <a href="blog.html" class="text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-600 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <div class="pt-24 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Notre Blog</h1>
+                <p class="text-xl text-gray-600">Découvrez nos derniers articles, guides et conseils</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="bg-white border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-4 py-2 rounded-full bg-blue-600 text-white">Tous les articles</button>
+                <button class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700">Tech</button>
+                <button class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700">Lifestyle</button>
+                <button class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700">Maison</button>
+                <button class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700">Sport</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Post -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="md:flex">
+                <div class="md:flex-shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-96" src="https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Article à la une">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-blue-600 font-semibold">Guide d'achat</div>
+                    <a href="#" class="block mt-1 text-2xl font-semibold text-gray-900 hover:text-blue-600">Les Meilleurs Smartphones de 2024 : Guide Complet</a>
+                    <p class="mt-2 text-gray-600">Un guide détaillé pour vous aider à choisir le smartphone qui correspond le mieux à vos besoins et votre budget en 2024.</p>
+                    <div class="mt-4">
+                        <div class="flex items-center">
+                            <img class="h-10 w-10 rounded-full" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Auteur">
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">Sophie Martin</p>
+                                <p class="text-sm text-gray-500">15 Mars 2024 • 15 min de lecture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Posts Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Écouteurs sans fil">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Tech</span>
+                        <span class="ml-2 text-gray-500 text-sm">12 Mars 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">Top 5 des Écouteurs Sans Fil en 2024</h2>
+                    <p class="text-gray-600 mb-4">Découvrez notre sélection des meilleurs écouteurs sans fil pour tous les budgets.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">Lire la suite →</a>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Aspirateur robot">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Maison</span>
+                        <span class="ml-2 text-gray-500 text-sm">10 Mars 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">Guide d'Achat : Aspirateurs Robots</h2>
+                    <p class="text-gray-600 mb-4">Comment choisir le meilleur aspirateur robot pour votre maison ?</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">Lire la suite →</a>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Montre connectée">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Sport</span>
+                        <span class="ml-2 text-gray-500 text-sm">8 Mars 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">Les Meilleures Montres Connectées pour le Sport</h2>
+                    <p class="text-gray-600 mb-4">Comparatif des montres connectées pour suivre vos performances sportives.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">Lire la suite →</a>
+                </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/1334598/pexels-photo-1334598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Appareil photo">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Tech</span>
+                        <span class="ml-2 text-gray-500 text-sm">5 Mars 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">Les Meilleurs Appareils Photo pour Débutants</h2>
+                    <p class="text-gray-600 mb-4">Notre sélection d'appareils photo pour débuter en photographie.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">Lire la suite →</a>
+                </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/4112290/pexels-photo-4112290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cuisine connectée">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Maison</span>
+                        <span class="ml-2 text-gray-500 text-sm">3 Mars 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">La Cuisine Connectée : Gadgets Indispensables</h2>
+                    <p class="text-gray-600 mb-4">Les accessoires high-tech qui révolutionnent la cuisine moderne.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">Lire la suite →</a>
+                </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/4009626/pexels-photo-4009626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Accessoires gaming">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Tech</span>
+                        <span class="ml-2 text-gray-500 text-sm">1 Mars 2024</span>
+                    </div>
+                    <h2 class="text-xl font-semibold mb-2">Setup Gaming : Notre Guide Complet</h2>
+                    <p class="text-gray-600 mb-4">Comment créer le setup gaming parfait ? Nos recommandations.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">Lire la suite →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="bg-blue-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Ne Manquez Aucun Article</h2>
+                <p class="text-xl text-white mb-8">Inscrivez-vous à notre newsletter pour recevoir nos derniers articles et guides d'achat</p>
+                <form class="max-w-md mx-auto">
+                    <div class="flex">
+                        <input type="email" placeholder="Votre adresse email" class="flex-1 px-4 py-3 rounded-l-lg focus:outline-none">
+                        <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-r-lg font-medium hover:bg-blue-50 transition duration-300">
+                            S'inscrire
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AffiliPro</h3>
+                    <p class="text-gray-400">Votre guide de confiance pour les meilleurs produits et services.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">À propos</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Légal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mentions légales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">CGU</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 AffiliPro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
